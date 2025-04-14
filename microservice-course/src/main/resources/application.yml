@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: msvc-course
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+  config:
+    import: "optional:configserver:"
+
+eureka:
+  instance:
+    hostname: localhost
