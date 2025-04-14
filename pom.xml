@@ -18,6 +18,8 @@
 
   <modules>
     <module>microservice-eureka</module>
+    <module>microservice-course</module>
+    <module>microservice-config</module>
   </modules>
 
   <properties>
