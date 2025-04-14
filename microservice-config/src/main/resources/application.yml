@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/martinzetav/Course-Hub-Config
+          username: ${GIT_USERNAME}
+          password: ${GIT_ACCESS_TOKEN}
+
+eureka:
+  instance:
+    hostname: localhost
