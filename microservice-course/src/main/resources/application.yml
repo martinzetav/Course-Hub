@@ -11,6 +11,16 @@ spring:
         serviceId: config-server
   config:
     import: "optional:configserver:"
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/courseDB
+    username: postgres
+    password: root
+    jpa:
+      hibernate:
+        ddl-auto: create-drop
+      database: postgresql
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 eureka:
   instance:
