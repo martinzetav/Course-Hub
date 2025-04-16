@@ -68,6 +68,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -100,7 +105,6 @@
 							<artifactId>mapstruct-processor</artifactId>
 							<version>1.6.3</version>
 						</path>
-						<!-- other annotation processors -->
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
