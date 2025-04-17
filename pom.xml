@@ -20,6 +20,7 @@
     <module>microservice-eureka</module>
     <module>microservice-course</module>
     <module>microservice-config</module>
+    <module>microservice-enrollement</module>
   </modules>
 
   <properties>
@@ -27,20 +28,18 @@
     <maven.compiler.release>21</maven.compiler.release>
   </properties>
 
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <version>1.18.30</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-actuator</artifactId>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.30</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+  </dependencies>
 
   <build>
     <pluginManagement>
