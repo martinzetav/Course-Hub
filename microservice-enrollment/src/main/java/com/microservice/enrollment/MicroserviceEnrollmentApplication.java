@@ -1,13 +1,13 @@
-package com.microservice.enrollement;
+package com.microservice.enrollment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MicroserviceEnrollementApplication {
+public class MicroserviceEnrollmentApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroserviceEnrollementApplication.class, args);
+		SpringApplication.run(MicroserviceEnrollmentApplication.class, args);
 	}
 
 }

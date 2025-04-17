@@ -1,10 +1,10 @@
-package com.microservice.enrollement;
+package com.microservice.enrollment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MicroserviceEnrollementApplicationTests {
+class MicroserviceEnrollmentApplicationTests {
 
 	@Test
 	void contextLoads() {

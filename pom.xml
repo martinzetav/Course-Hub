@@ -20,7 +20,7 @@
     <module>microservice-eureka</module>
     <module>microservice-course</module>
     <module>microservice-config</module>
-    <module>microservice-enrollement</module>
+    <module>microservice-enrollment</module>
   </modules>
 
   <properties>
