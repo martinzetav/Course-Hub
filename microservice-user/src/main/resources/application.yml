@@ -1,1 +1,28 @@
-spring.application.name=microservice-user
+server:
+  port: 8085
+
+spring:
+  application:
+    name: msvc-user
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+  config:
+    import: "optional:configserver:"
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/userdb
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  instance:
+    hostname: localhost
